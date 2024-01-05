@@ -1,23 +1,26 @@
 import React from 'react'
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+//Icons import
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import HomeIcon from '@mui/icons-material/Home';
-import ExploreIcon from '@mui/icons-material/Explore';
-import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
-import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
-import HistoryIcon from '@mui/icons-material/History';
-import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
-import MovieCreationIcon from '@mui/icons-material/MovieCreation';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import FeedIcon from '@mui/icons-material/Feed';
-import LiveTvIcon from '@mui/icons-material/LiveTv';
-import ReportIcon from '@mui/icons-material/Report';
-import SettingsIcon from '@mui/icons-material/Settings';
-import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
-import HelpCenterIcon from '@mui/icons-material/HelpCenter';
-import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import ExploreIcon from '@mui/icons-material/Explore';
+import FeedIcon from '@mui/icons-material/Feed';
+import HelpCenterIcon from '@mui/icons-material/HelpCenter';
+import HistoryIcon from '@mui/icons-material/History';
+import HomeIcon from '@mui/icons-material/Home';
+import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
+import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
+import LiveTvIcon from '@mui/icons-material/LiveTv';
+import MovieCreationIcon from '@mui/icons-material/MovieCreation';
+import ReportIcon from '@mui/icons-material/Report';
+import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
+import SettingsIcon from '@mui/icons-material/Settings';
+import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
+
 const Container=styled.div`
 background: ${({theme})=>theme.bgLighter};
 color:${({theme})=>theme.text};
@@ -75,10 +78,12 @@ const Menu = ({darkMode,setDarkMode}) => {
   return (
     <Container>
        <Wrapper>
-        <Logo>
-            <FontAwesomeIcon icon={faYoutube} size='2x' color='red' />
-             Youtube
-        </Logo>
+        <Link to="/" style={{textDecoration:"none",color:"inherit"}}>
+             <Logo>
+                 <FontAwesomeIcon icon={faYoutube} size='2x' color='red' />
+                  Youtube
+             </Logo>
+        </Link>
         <Item>
              <HomeIcon />
              Home

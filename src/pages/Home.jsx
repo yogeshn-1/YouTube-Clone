@@ -5,7 +5,6 @@ const Container=styled.div`
 display:flex;
 flex-wrap: wrap;
 justify-content: space-between;
-margin:10px;
 `;
 const Home = () => {
   return (

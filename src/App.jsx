@@ -4,6 +4,7 @@ import Menu from "./Components/Menu"
 import { darkTheme, lightTheme } from "./utils/Theme";
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Video from "./pages/Video";
 const Container=styled.div`
@@ -14,8 +15,9 @@ flex:7;
 background-color: ${({theme})=>theme.bg};
 color: ${({theme})=>theme.textSoft};
 `;
-const Wrapper= styled.div``;
-
+const Wrapper= styled.div`
+margin:20px 40px ;`
+;
 function App() {
   const [darkMode,setDarkMode]=useState(true)
   return (
