@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import logo from "../assets/yogi-high-resolution-logo-transparent.png"
 
 const Container=styled.div`
 display:flex;
@@ -21,11 +22,9 @@ margin-top: 10px;
 gap: 15px;
 `;
 
-
 const ChannelImage=styled.img`
 width:40px;
 height: 40px;
-background-color: #789;
 border-radius: 50%;
 `;
 
@@ -54,7 +53,7 @@ const Cards = () => {
         <Container>
             <Image />
             <Details>
-                <ChannelImage/>
+                <ChannelImage src={logo}/>
                 <TextContainer>
                     <Title>Test title</Title>
                     <ChannelName>Yogi bhai ki video</ChannelName>
