@@ -29,7 +29,7 @@ const Search=styled.div`
   margin: auto;
   position: relative;
   right: 0;
-  width: 40%;
+  width: 50%;
 `;
 
 const Input=styled.input`
@@ -38,7 +38,7 @@ border: 0;
 color: ${({theme})=>theme.text};
 flex-grow: 1;
 outline: 0;
-padding: 7px;
+padding: 5px 10px;
 `;
 
 const Btn=styled.button`
