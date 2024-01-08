@@ -5,7 +5,8 @@ import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
 import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
 import SendIcon from '@mui/icons-material/Send';
-import Comments from '../Components/Comments';
+import AddComments from '../Components/AddComment';
+import Comment from '../Components/Comment';
 
 const Container=styled.div`
 display: flex;
@@ -143,7 +144,12 @@ const Video = () => {
           </ChannelInfo>
           <Subscribe>Subscribe</Subscribe>
         </Channel>
-        <Comments></Comments>
+        <AddComments/>
+        <Comment/>
+        <Comment/>
+        <Comment/>
+        <Comment/>
+        <Comment/>
       </Content>
       <Recommendation>other videos</Recommendation>
     </Container>

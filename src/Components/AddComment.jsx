@@ -30,7 +30,7 @@ padding: 2px;
 width: 100%;
 `;
 
-const Comments = () => {
+const AddComment = () => {
   return (
     <Container>
         <NewComment>
@@ -41,4 +41,4 @@ const Comments = () => {
   )
 }
 
-export default Comments
+export default AddComment
