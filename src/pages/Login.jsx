@@ -60,7 +60,7 @@ const Login = () => {
             <Title>
                 Sign In 
             </Title>
-            <SubTitle>to continue to YouTube</SubTitle>
+            <SubTitle>to continue to CloneTube</SubTitle>
             <Input type='text' placeholder='username'/>
             <Input type='password' placeholder='password'/>
             <Btn>Sign in</Btn>

@@ -116,15 +116,9 @@ const Video = () => {
     <Container>
       <Content>
         <VideoWrapper>
-          <iframe
-          height="420"
-          width="100%"
-          title='Youtube Video player'
-          frameBorder="0"
-          allowFullScreen
-          src='https://www.youtube.com/embed/aRGdDy18qfY'/>
+        <iframe width="930" height="523" src="https://www.youtube.com/embed/K87aFjB7Ff0" title="Beautiful Sunrise &amp; The Flowers | NO COPYRIGHT VIDEO | NATURE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </VideoWrapper>
-        <Title>Test Video</Title>
+        <Title>No Cpoyright Video</Title>
         <Details>
           <Info>640 views , 2 days ago</Info>
           <Buttons>
@@ -139,7 +133,7 @@ const Video = () => {
           <ChannelInfo>
             <ChannelImage src={logo}/>
             <ChannelDetails>
-              <ChannelName>Yogi bhai</ChannelName>
+              <ChannelName>Yogesh Tube</ChannelName>
               <ChannelCounter>140k Subscribers</ChannelCounter>
               <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquid cum harum dolore ipsa beatae iure similique quas iusto recusandae?</Description>
             </ChannelDetails>

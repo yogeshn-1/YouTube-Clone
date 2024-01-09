@@ -87,7 +87,7 @@ const Menu = ({darkMode,setDarkMode}) => {
         <Link to="/" style={{textDecoration:"none",color:"inherit"}}>
              <Logo>
                  <FontAwesomeIcon icon={faYoutube} size='2x' color='red' />
-                  Youtube
+                 CloneTube
              </Logo>
         </Link>
         <Item>

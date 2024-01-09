@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from "../assets/yogi-high-resolution-logo-transparent.png"
+import thumbnail from "../assets/thumbnail.png"
 
 const Container=styled.div`
 display:${({size})=>size==="sm"&&"flex"};
@@ -14,7 +15,6 @@ gap:10px;
 const Image=styled.img`
 width: 100%;
 height: ${({size})=>size==="sm"?"120px":"200px"};
-background-color: #789;
 flex: 1;
 `;
 
@@ -57,12 +57,12 @@ const Cards = ({size}) => {
   return (
     <Link to="/video/test" style={{textDecoration:"none",color:"inherit"}}>
         <Container size={size}>
-            <Image size={size}/>
+            <Image size={size} src={thumbnail}/>
             <Details size={size}>
                 <ChannelImage src={logo} size={size}/>
                 <TextContainer>
-                    <Title>Test title</Title>
-                    <ChannelName>Yogi bhai ki video</ChannelName>
+                    <Title>No Cpoyright Video</Title>
+                    <ChannelName>Yogesh Tube</ChannelName>
                     <Info>640 views, 2 days ago</Info>
                 </TextContainer>
             </Details>

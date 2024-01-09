@@ -19,6 +19,8 @@ const Home = () => {
         <Cards />
         <Cards />
         <Cards />
+        <Cards />
+        <Cards />
     </Container>
   )
 }
