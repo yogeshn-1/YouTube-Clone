@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';  
 import SearchIcon from '@mui/icons-material/Search';
+import { Link } from 'react-router-dom';
+import Login from '../pages/Login';
 
 const Container=styled.div`
   background-color: ${({theme})=>theme.bgLighter};
@@ -62,7 +64,9 @@ const Navbar = () => {
           <Input placeholder="Search"></Input>
           <SearchIcon/>
         </Search>
-        <Btn> <AccountCircleIcon/> Sign in</Btn> 
+        <Link to="login" style={{textDecoration:"none"}}>
+          <Btn> <AccountCircleIcon/> Sign in</Btn> 
+        </Link>
       </Wrapper>
     </Container>
   )

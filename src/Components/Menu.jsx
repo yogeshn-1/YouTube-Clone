@@ -105,7 +105,9 @@ const Menu = ({darkMode,setDarkMode}) => {
         <Hline/>
         <Login>
             Sign in to like videos, comment and Subscribe 
-            <Btn> <AccountCircleIcon/> Sign in</Btn>
+            <Link to="login" style={{textDecoration:"none"}}>
+             <Btn> <AccountCircleIcon/> Sign in</Btn>
+            </Link>
         </Login>
         <Hline/>
         <Item>
