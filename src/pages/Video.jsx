@@ -7,6 +7,7 @@ import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
 import SendIcon from '@mui/icons-material/Send';
 import AddComments from '../Components/AddComment';
 import Comment from '../Components/Comment';
+import Cards from '../Components/Cards';
 
 const Container=styled.div`
 display: flex;
@@ -58,6 +59,7 @@ border: 0.5px solid ${({theme})=>theme.soft};
 
 const Recommendation=styled.div`
 flex: 2;
+margin-left: 20px;
 `;
 
 const Channel=styled.div`
@@ -151,7 +153,15 @@ const Video = () => {
         <Comment/>
         <Comment/>
       </Content>
-      <Recommendation>other videos</Recommendation>
+      <Recommendation>
+       <Cards size="sm"/>  
+       <Cards size="sm"/>  
+       <Cards size="sm"/>  
+       <Cards size="sm"/>  
+       <Cards size="sm"/>  
+       <Cards size="sm"/>  
+       <Cards size="sm"/>  
+      </Recommendation>    
     </Container>
    
   )

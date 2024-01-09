@@ -31,9 +31,11 @@ height: 100vh;
 position: sticky;
 top: 0;
 `;
+
 const Wrapper=styled.div`
 padding: 5px 10px;
 `;
+
 const Logo=styled.div`
 align-items: center;
 display: flex;
@@ -46,7 +48,11 @@ align-items: center;
 cursor: pointer;
 display: flex;
 gap: 10px;
-padding-top: 5px;
+margin-top: 5px;
+&:hover{
+     background-color: ${({theme})=>theme.soft};
+     border-radius: 5px;
+}
 `
 const Hline=styled.div`
 border: 0.5px solid ${({theme})=>theme.soft};
