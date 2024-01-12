@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';  
-import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
-import Login from '../pages/Login';
+import {CircleUser,Search} from "lucide-react";
 
 const Container=styled.div`
   background-color: ${({theme})=>theme.bgLighter};
@@ -21,7 +19,7 @@ const Wrapper=styled.div`
   width: 100%;
 `;
 
-const Search=styled.div`
+const SearchBar=styled.div`
   align-items: center;
   border-radius: 5px;
   border: 1px solid #cde;
@@ -30,6 +28,7 @@ const Search=styled.div`
   left: 0;
   margin: auto;
   position: relative;
+  padding: 0 5px;
   right: 0;
   width: 50%;
 `;
@@ -60,12 +59,12 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Search>
+        <SearchBar>
           <Input placeholder="Search"></Input>
-          <SearchIcon/>
-        </Search>
+          <Search />
+        </SearchBar>
         <Link to="login" style={{textDecoration:"none"}}>
-          <Btn> <AccountCircleIcon/> Sign in</Btn> 
+          <Btn> <CircleUser/> Sign in</Btn> 
         </Link>
       </Wrapper>
     </Container>

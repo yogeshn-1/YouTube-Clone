@@ -2,24 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 //Icons import
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import ExploreIcon from '@mui/icons-material/Explore';
-import FeedIcon from '@mui/icons-material/Feed';
-import HelpCenterIcon from '@mui/icons-material/HelpCenter';
-import HistoryIcon from '@mui/icons-material/History';
-import HomeIcon from '@mui/icons-material/Home';
-import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
-import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
-import LiveTvIcon from '@mui/icons-material/LiveTv';
-import MovieCreationIcon from '@mui/icons-material/MovieCreation';
-import ReportIcon from '@mui/icons-material/Report';
-import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
-import SettingsIcon from '@mui/icons-material/Settings';
-import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
+import yt from "../assets/icons8-youtube-48.png";
+
+import { Compass, Home ,GalleryVerticalEnd,History, BookPlus,Music,LandPlot, Joystick,CircleUser,Clapperboard,Newspaper,Radio,Settings,MessageCircleWarning,HelpCircle,SunMedium,SunMoon,Youtube} from "lucide-react";
 
 const Container=styled.div`
 background: ${({theme})=>theme.bgLighter};
@@ -35,6 +20,9 @@ top: 0;
 const Wrapper=styled.div`
 padding: 5px 10px;
 `;
+
+const Image=styled.img`
+width:35px`;
 
 const Logo=styled.div`
 align-items: center;
@@ -86,79 +74,78 @@ const Menu = ({darkMode,setDarkMode}) => {
        <Wrapper>
         <Link to="/" style={{textDecoration:"none",color:"inherit"}}>
              <Logo>
-                 <FontAwesomeIcon icon={faYoutube} size='2x' color='red' />
+             <Image src={yt}/>
                  CloneTube
              </Logo>
         </Link>
         <Item>
-             <HomeIcon />
-             Home
+        <Home/> Home
         </Item>
         <Item>
-             <ExploreIcon />
-             Explore
+          <Compass/> 
+          Explore
         </Item>
         <Item>
-             <SubscriptionsIcon /> 
-             Subscriptions
+          <GalleryVerticalEnd />            
+          Subscriptions
         </Item>
         <Hline/>
         <Login>
             Sign in to like videos, comment and Subscribe 
             <Link to="login" style={{textDecoration:"none"}}>
-             <Btn> <AccountCircleIcon/> Sign in</Btn>
+             <Btn> <CircleUser/> Sign in</Btn>
             </Link>
         </Login>
         <Hline/>
         <Item>
-            <LibraryAddIcon/>
-             Library
+          <BookPlus />
+          Library
         </Item>
         <Item>
-            <HistoryIcon/>      
-             History
+         <History />        
+          History
         </Item> 
         <Hline/>
         <Title>Best of Youtube</Title>
         <Item>
-            <LibraryMusicIcon/>
+            <Music />
              Music
         </Item>
         <Item>
-            <SportsBasketballIcon/>
+             <LandPlot />  
              Sports
         </Item>
         <Item>
-            <SportsEsportsIcon/>
-             Gaming
+          <Joystick />        
+          Gaming
         </Item>
         <Item>
-            <MovieCreationIcon/>
-             Movies
+          <Clapperboard />
+          Movies
         </Item>
         <Item>
-            <FeedIcon/>
-             News
+          <Newspaper />
+          News
         </Item> 
         <Item>
-            <LiveTvIcon/>
-             Live
+          <Radio />
+          Live
         </Item>
         <Hline/>
         <Item>
-            <SettingsIcon/>
-             Settings
+          <Settings />
+          Settings
         </Item>
         <Item>
-            <ReportIcon/>
-             Report
+          <MessageCircleWarning />
+          Report
         </Item>
         <Item>
-            <HelpCenterIcon/>
-             Help
+         <HelpCircle />
+          Help
         </Item> 
         <Item onClick={()=>setDarkMode(!darkMode)}>
-            <SettingsBrightnessIcon/>
+        {darkMode?<SunMedium />:<SunMoon />}
              {darkMode? "Light":"Dark"} Mode
         </Item>
        </Wrapper>

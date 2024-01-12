@@ -10,11 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@mui/icons-material": "^5.15.3",
-    "@mui/material": "^5.15.3",
+    "lucide-react": "^0.309.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

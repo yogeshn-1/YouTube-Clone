@@ -1,13 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from "../assets/yogi-high-resolution-logo-transparent.png"
-import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
-import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
-import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
-import SendIcon from '@mui/icons-material/Send';
 import AddComments from '../Components/AddComment';
 import Comment from '../Components/Comment';
 import Cards from '../Components/Cards';
+import {Forward ,ThumbsUp, ThumbsDown,CopyPlus} from "lucide-react";
 
 const Container=styled.div`
 display: flex;
@@ -55,6 +52,7 @@ font-size: 14px;
 
 const Hline=styled.div`
 border: 0.5px solid ${({theme})=>theme.soft};
+margin-top: 5px;
 `;
 
 const Recommendation=styled.div`
@@ -122,10 +120,10 @@ const Video = () => {
         <Details>
           <Info>640 views , 2 days ago</Info>
           <Buttons>
-            <Button><ThumbUpOffAltIcon/> 1452</Button>
-            <Button><ThumbDownOffAltIcon/>Dislike</Button>
-            <Button><SendIcon/>Share</Button>
-            <Button><LibraryAddIcon/>Add to library</Button>
+            <Button><ThumbsUp /> 1452</Button>
+            <Button><ThumbsDown />Dislike</Button>
+            <Button><Forward />Share</Button>
+            <Button><CopyPlus />Add to library</Button>
           </Buttons>
         </Details>
         <Hline/>
