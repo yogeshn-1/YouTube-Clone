@@ -8,6 +8,10 @@ import {Forward ,ThumbsUp, ThumbsDown,CopyPlus} from "lucide-react";
 
 const Container=styled.div`
 display: flex;
+@media screen and (max-width: 768px) {
+  flex-direction: column;
+  gap: 20px;
+}
 `;
 
 const Content=styled.div`
@@ -15,7 +19,27 @@ flex: 5;
 `;
 
 const VideoWrapper=styled.div`
-
+@media screen and (max-width: 768px) {
+  iframe{
+    min-width: 0;
+    max-width:560px;
+    height: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:960px){
+  iframe{
+    min-width: 0;
+    max-width:600px;
+    height: 480px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+  iframe{
+    min-width:560px ;
+    max-width:700px;
+    height: 500px;
+  }
+}
 `;
 
 const Title=styled.h1`
@@ -56,8 +80,14 @@ margin-top: 5px;
 `;
 
 const Recommendation=styled.div`
-flex: 2;
+flex: 3;
 margin-left: 20px;
+@media screen and (max-width: 768px) {
+  width: 60%;
+}
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  width: 60%;
+}
 `;
 
 const Channel=styled.div`
@@ -114,7 +144,7 @@ const Video = () => {
     <Container>
       <Content>
         <VideoWrapper>
-        <iframe width="930" height="523" src="https://www.youtube.com/embed/K87aFjB7Ff0" title="Beautiful Sunrise &amp; The Flowers | NO COPYRIGHT VIDEO | NATURE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="900" height="523" src="https://www.youtube.com/embed/K87aFjB7Ff0" title="Beautiful Sunrise &amp; The Flowers | NO COPYRIGHT VIDEO | NATURE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </VideoWrapper>
         <Title>No Cpoyright Video</Title>
         <Details>

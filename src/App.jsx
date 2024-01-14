@@ -17,7 +17,11 @@ background-color: ${({theme})=>theme.bg};
 color: ${({theme})=>theme.textSoft};
 `;
 const Wrapper= styled.div`
-margin:20px 40px ;`
+margin:20px 40px;
+@media screen and (min-width: 768px) and (max-width:960px){
+margin: 10px 20px;
+}
+`
 ;
 function App() {
   const [darkMode,setDarkMode]=useState(true)

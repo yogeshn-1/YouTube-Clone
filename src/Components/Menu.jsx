@@ -17,6 +17,9 @@ top: 0;
 @media screen and (max-width: 480px) {
   display: none;
 }
+@media screen and (min-width: 500px) and  (max-width: 1440px) {
+  height: fit-content;
+}
 `;
 
 const Wrapper=styled.div`
