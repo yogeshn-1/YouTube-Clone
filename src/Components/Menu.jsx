@@ -12,9 +12,11 @@ color:${({theme})=>theme.text};
 flex:1;
 font-size: 14px;
 height: 100vh;
-height: 100vh;
 position: sticky;
 top: 0;
+@media screen and (max-width: 480px) {
+  display: none;
+}
 `;
 
 const Wrapper=styled.div`
@@ -22,7 +24,7 @@ padding: 5px 10px;
 `;
 
 const Image=styled.img`
-width:35px`;
+width:35px;`;
 
 const Logo=styled.div`
 align-items: center;

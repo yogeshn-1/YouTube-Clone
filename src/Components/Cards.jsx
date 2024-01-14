@@ -8,8 +8,7 @@ const Container=styled.div`
 display:${({size})=>size==="sm"&&"flex"};
 width: ${({size})=>size!=="sm"&&"300px"};
 cursor: pointer;
-margin-bottom: ${({size})=>size==="sm"?"10px":"30px"};
-gap:10px;
+margin:5px auto ${({size})=>size==="sm"?"10px":"30px"} ;
 `;
 
 const Image=styled.img`

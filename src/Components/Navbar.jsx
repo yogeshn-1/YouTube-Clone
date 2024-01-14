@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import {CircleUser,Search} from "lucide-react";
+import yt from "../assets/icons8-youtube-48.png";
+
 
 const Container=styled.div`
   background-color: ${({theme})=>theme.bgLighter};
@@ -17,6 +19,19 @@ const Wrapper=styled.div`
   justify-content: flex-end;
   position: absolute;
   width: 100%;
+  &:first-of-type img{
+    display: none;
+  }
+  @media screen  and (max-width: 480px){
+    &:first-of-type img{
+    display: block;
+  }
+  }
+`;
+
+const Image=styled.img`
+width:40px;
+padding: 5px;
 `;
 
 const SearchBar=styled.div`
@@ -59,6 +74,9 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
+        <Link to="/" style={{textDecoration:"none",color:"inherit"}}>
+             <Image src={yt}/>
+        </Link>
         <SearchBar>
           <Input placeholder="Search"></Input>
           <Search />
