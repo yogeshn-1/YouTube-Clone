@@ -21,25 +21,33 @@ flex: 5;
 const VideoWrapper=styled.div`
 @media screen and (max-width: 768px) {
   iframe{
-    min-width: 0;
-    max-width:560px;
-    height: 480px;
+    width:500px;
+    height: 420px;
   }
 }
 @media screen and (min-width: 768px) and (max-width:960px){
   iframe{
-    min-width: 0;
-    max-width:600px;
-    height: 480px;
+    width:540px;
+    height:480px;
   }
 }
-@media screen and (min-width: 960px) and (max-width: 1440px) {
+@media screen and (min-width: 960px) and (max-width: 1180px) {
   iframe{
-    min-width:560px ;
-    max-width:700px;
-    height: 500px;
+    width:640px;
+    height: 560px;
   }
 }
+  @media screen and (min-width: 1180px) and (max-width:1500px) {
+  iframe{
+    width:800px;
+    height: 620px;
+  } 
+   @media screen and (min-width:1500px) {
+  iframe{
+    width:100%;
+    height: 100%;
+  }
+}}
 `;
 
 const Title=styled.h1`

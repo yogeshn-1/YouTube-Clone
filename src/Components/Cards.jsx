@@ -19,8 +19,12 @@ height: ${({size})=>size==="sm"?"120px":"200px"};
   height: ${({size})=>size==="sm"&&"100px"};
   width:${({size})=>size==="sm"&&"100px"} ;
 }
-@media screen and (min-width: 1025px) {
-  width:${({size})=>size==="sm"&&"160px"} ;
+@media screen and (min-width: 1025px) and (max-width:1280px) {
+  width:${({size})=>size==="sm"&&"125px"} ;
+  height:${({size})=>size==="sm"&&"110px"} ;
+}
+@media screen and (min-width: 1281px) {
+  width:${({size})=>size==="sm"&&"180px"} ;
 }
 `;
 
